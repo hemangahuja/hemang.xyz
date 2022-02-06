@@ -1,4 +1,4 @@
-const  BLOG_URL  = "https://just-chatting-lac.vercel.app/"
+const  BLOG_URL  = "https://just-chatting-portifolio-orqa9225x-hemangahuja.vercel.app"
 
 module.exports = {
   async rewrites() {

@@ -1,0 +1,6 @@
+[submodule "just_chatting"]
+	path = just_chatting
+	url = https://github.com/hemangahuja/just_chatting.git
+[submodule "portifolio_website"]
+	path = portifolio_website
+	url = https://github.com/hemangahuja/portifolio_website.git

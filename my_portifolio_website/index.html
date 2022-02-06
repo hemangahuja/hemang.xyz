@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body className="bg-gray-400 text-2xl">
+    <header className="flex m-2 mx-10 text-lg">
+      <div className="ml-auto md:ml-0">Hi</div>
+      <nav className="hidden md:flex ml-auto space-x-5">
+        <a>Home</a>
+        <a>About</a>
+        <a>Contact</a>
+      </nav>
+      <div className="md:hidden ml-auto">
+        <button id="mobile-nav-button" className="outline-none">
+          <svg
+            className="w-6 h-6 text-black"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <div id="mobile-nav" className="flex flex-col hidden">
+          <button id="cross">x</button>
+          <a>Home</a>
+          <a>About</a>
+          <a>Contact</a>
+        </div>
+      </div>
+    </header>
+    <main className="flex flex-col">
+        <section className="self-center m-6 md:self-auto md:flex md:justify-between">
+            <div className="text-center md:self-center">
+                <p>
+                    Hello
+                    <br>
+                    Im a paragraph
+                </p>
+            </div>
+            <div>
+                <img src = "https://images.unsplash.com/photo-1643103546918-d0aa3a607c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+            </div>
+        </section>
+      
+        <section  className="self-center md:self-auto m-5">
+            <div className="md:text-center">
+                Profiecient in
+            </div>
+            <div className="flex flex-col md:flex-row justify-between">
+                <div>
+                    HTML
+                </div>
+                <div>
+                    CSS
+                </div>
+                <div>
+                    JavaScript
+                </div>
+            </div>
+        </section>
+
+        <section  className="self-center  m-5">
+            <div>
+                Education
+            </div>
+            <div className="flex flex-col">
+                <div>
+                    College
+                </div>
+                <div>
+                    School
+                </div>
+                <div>
+                    School1
+                </div>
+            </div>
+        </section>
+  
+        <section className="self-center m-5">
+            <div className="text-center">
+                My Projects
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-10">
+                <div>
+                    <img src = "https://images.unsplash.com/photo-1643103546918-d0aa3a607c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+                </div>
+                <div>
+                    <img src = "https://images.unsplash.com/photo-1643103546918-d0aa3a607c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+                </div> 
+                <div>
+                    <img src = "https://images.unsplash.com/photo-1643103546918-d0aa3a607c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+                </div>
+                <div>
+                    <img src = "https://images.unsplash.com/photo-1643103546918-d0aa3a607c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+                </div>
+            </div>
+        </section>
+        <section className="self-center m-5">
+            <div className="text-center">
+                Contact Me!
+            </div>
+            <form className="flex flex-col">
+                  <div  className=" flex flex-col md:grid md:grid-cols-2 md:gap-y-2">
+                      
+                    <label for="name">Name</label>
+                    <input type="text"> 
+                    <label for="message">message</label>
+                    <input type="text"> 
+                  </div>
+                <button className="text-center">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer className="flex justify-center">
+        <div className="grid grid-cols-2 gap-x-2 md:flex md:justify-between md:space-x-32">
+            <a>phone number</a>
+            <a>email</a>
+            <a>address</a>
+            <a>Github</a>
+        </div>
+    </footer>
+    <script>
+      const mobileNavButton = document.getElementById("mobile-nav-button");
+      const mobileNav = document.getElementById("mobile-nav");
+      const cross = document.getElementById("cross");
+      mobileNavButton.onclick = () => {
+        mobileNav.classList.toggle("hidden");
+        mobileNavButton.classList.toggle("hidden");
+      };
+      cross.onclick = () => {
+        mobileNav.classList.toggle("hidden");
+        mobileNavButton.classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>

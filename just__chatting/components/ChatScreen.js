@@ -28,7 +28,7 @@ const ChatScreen = ({ channelName, userName , color}) => {
     }
     let notification = new Notification(title, {
       body,
-      icon: '/icon.png',
+      icon: '/blog/icon.png',
     });
     notification.onclick = () => {
       window.focus();
@@ -52,7 +52,7 @@ const ChatScreen = ({ channelName, userName , color}) => {
   useEffect(() => {
     const pusher = new Pusher('406974db40ff8341c47c', {
       cluster: 'ap2',
-      authEndpoint : "/api/auth",
+      authEndpoint : "/blog/api/auth",
       auth: {
         params: {
           username : userName,
@@ -154,7 +154,7 @@ const ChatScreen = ({ channelName, userName , color}) => {
           }
         }>
          { (userName == "prerna" || userName == "Prerna") ? "Hello cutiepie! " : "Hello " + userName + "! "}
-        <Image src = {'/chatting.gif'} alt = 'emote' width={100} height={100}/>
+        <Image src = {'/blog/chatting.gif'} alt = 'emote' width={100} height={100}/>
         </h4>
         <div style={{
           paddingTop: "0px",

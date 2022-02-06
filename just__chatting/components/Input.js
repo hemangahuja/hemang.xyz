@@ -12,7 +12,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
     const handleChange = (e) =>{
       setMessage(e);
         if(canSend){
-          axios.post(`/api/typing`, {
+          axios.post(`/blog/api/typing`, {
             channel: "presence-" + channel,
             username,
           });
@@ -34,7 +34,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
         ack : true
       }
       addImage(data);
-      axios.post(`/api/image`, data);
+      axios.post(`/blog/api/image`, data);
       
     }
     const sendMessage = (e) => {
@@ -54,7 +54,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
       setMessage(""); 
         setShowErr(false);
         axios
-          .post(`/api/hello`, data)
+          .post(`/blog/api/hello`, data)
           .then(() => {
             
           });

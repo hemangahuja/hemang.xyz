@@ -9,11 +9,11 @@ module.exports = {
       },
       {
         source: '/blog',
-        destination: `${BLOG_URL}/`,
+        destination: `${BLOG_URL}/blog`,
       },
       {
         source: '/blog/:path*',
-        destination: `${BLOG_URL}/:path*/`,
+        destination: `${BLOG_URL}/blog/:path*`,
       },
     ]
   },

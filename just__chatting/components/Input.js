@@ -12,7 +12,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
     const handleChange = (e) =>{
       setMessage(e);
         if(canSend){
-          axios.post(`/blog/api/typing`, {
+          axios.post(`/just-chatting/api/typing`, {
             channel: "presence-" + channel,
             username,
           });
@@ -34,7 +34,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
         ack : true
       }
       addImage(data);
-      axios.post(`/blog/api/image`, data);
+      axios.post(`/just-chatting/api/image`, data);
       
     }
     const sendMessage = (e) => {
@@ -54,7 +54,7 @@ const ChatInput = ({ channel, username , color , addMessage , addImage}) => {
       setMessage(""); 
         setShowErr(false);
         axios
-          .post(`/blog/api/hello`, data)
+          .post(`/just-chatting/api/hello`, data)
           .then(() => {
             
           });

@@ -1,4 +1,4 @@
-const  BLOG_URL  = "https://just-chatting-portifolio.vercel.app"
+const { CHAT_URL } = process.env;
 
 module.exports = {
   async rewrites() {
@@ -8,12 +8,12 @@ module.exports = {
         destination: `/:path*`,
       },
       {
-        source: '/blog',
-        destination: `${BLOG_URL}/blog`,
+        source: '/just-chatting',
+        destination: `${CHAT_URL}/just-chatting`,
       },
       {
-        source: '/blog/:path*',
-        destination: `${BLOG_URL}/blog/:path*`,
+        source: '/just-chatting/:path*',
+        destination: `${CHAT_URL}/just-chatting/:path*`,
       },
     ]
   },

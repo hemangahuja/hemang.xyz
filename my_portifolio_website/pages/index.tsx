@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Particle from '../Components/Particles'
 import Contact from '../Components/Contact'
 import Header from '../Components/Header'
@@ -8,6 +8,8 @@ import Face from '../Components/Face'
 import Footer from '../Components/Footer'
 import TechStack from '../Components/TechStack'
 export default function index() {
+
+  const [sending, setSending] = useState('');
   useEffect(() => {
     const mobileNavButton = document.getElementById('mobile-nav-button')
     const mobileNav = document.getElementById('mobile-nav')
@@ -32,6 +34,7 @@ export default function index() {
   }, [])
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSending('Sending');
     const name = e.currentTarget.Uname.value;
     const message = e.currentTarget.message.value;
     const response = await fetch('/api/mail', {
@@ -46,11 +49,12 @@ export default function index() {
     })
     const data = await response.json();
     if(data.statusCode === 200){
-      alert('Message Sent! :) Thanks for reaching out to me!')
+      setSending('Message Sent! Thanks for reaching out to me :)');
     }
     else{
-      alert('Message Failed, try again after a while. Sorry for the inconvenience!')
+      setSending('Error! Please try again later. Sorry for the inconvenience.');
     }
+    
   }
   return (
     <>
@@ -66,7 +70,8 @@ export default function index() {
           <TechStack></TechStack>
           <Education></Education>
           <Projects></Projects>
-          <Contact handleSubmit={handleSubmit}></Contact>         
+          <Contact handleSubmit={handleSubmit} status = {sending}></Contact>    
+               
         </main>
         <Footer></Footer>
       </body>

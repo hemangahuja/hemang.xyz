@@ -66,7 +66,6 @@ export default function index() {
           <TechStack></TechStack>
           <Education></Education>
           <Projects></Projects>
-          <TechStack></TechStack>
           <Contact handleSubmit={handleSubmit}></Contact>         
         </main>
         <Footer></Footer>

@@ -164,12 +164,9 @@ export default function Home() {
           <div className="out">
             <div className="item">
               <span className="name">
-                <a href="https://medium.com/@hemangahujaeotw">technical</a>
+                <a href="https://medium.com/owasp-vitcc/birthday-attack-730866adfe40">birthday-attack</a>
               </span>
-              <div className="desc">
-                security writing on medium, including a published piece on the birthday attack and hash collisions
-                for OWASP VITCC
-              </div>
+              <div className="desc">hash collisions used to hijack secure connections - owasp vitcc on medium</div>
             </div>
             <div className="item">
               <span className="name">

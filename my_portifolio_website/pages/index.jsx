@@ -166,7 +166,7 @@ export default function Home() {
               <span className="name">
                 <a href="https://medium.com/owasp-vitcc/birthday-attack-730866adfe40">birthday-attack</a>
               </span>
-              <div className="desc">hash collisions used to hijack secure connections - owasp vitcc on medium</div>
+              <div className="desc">birthday paradox and hash collisions - owasp vitcc on medium</div>
             </div>
             <div className="item">
               <span className="name">

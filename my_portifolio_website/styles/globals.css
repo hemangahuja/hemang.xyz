@@ -19,7 +19,7 @@
   nav .links{order:2;display:flex;margin-left:auto}
   nav .theme-btn{order:3}
   @media(max-width:640px){
-    nav .links{order:3;flex-basis:100%;margin-left:0}
+    nav .links{order:3;flex-basis:100%;margin-left:0;flex-wrap:wrap;row-gap:10px}
     nav .links a{margin-left:0;margin-right:18px}
     nav .theme-btn{order:2;margin-left:auto}
   }

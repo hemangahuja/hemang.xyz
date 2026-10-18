@@ -94,7 +94,7 @@ export default function Home() {
 
         <section id="work">
           <div className="cmd">
-            <span className="prompt">$</span> ls cisco/ <span className="tag"># day job, the short version</span>
+            <span className="prompt">$</span> ls work/ <span className="tag"># day job, the short version</span>
           </div>
           <div className="out">
             <div className="item">
@@ -110,6 +110,14 @@ export default function Home() {
                 OpenTelemetry tracing SDK used by <b>5+ AI agents</b> across teams
               </div>
             </div>
+            <div className="item">
+              <span className="name">renovator</span>
+              <div className="desc">automates dependency maintenance with bullmq, redis background jobs and github webhooks</div>
+            </div>
+            <div className="item">
+              <span className="name">autolocal</span>
+              <div className="desc">debug Go microservices locally instead of fighting the shared environment</div>
+            </div>
           </div>
         </section>
 
@@ -119,11 +127,6 @@ export default function Home() {
           </div>
           <div className="out">
             <div className="item">
-              <span className="name">autolocal</span>{' '}
-              <span className="tag"># weekend build, internal - not public</span>
-              <div className="desc">debug Go microservices locally instead of fighting the shared environment</div>
-            </div>
-            <div className="item">
               <span className="name">
                 <a href="https://www.hemang.xyz/just-chatting">just-chatting</a>
               </span>{' '}
@@ -132,9 +135,21 @@ export default function Home() {
             </div>
             <div className="item">
               <span className="name">
+                <a href="https://github.com/cyscomvit/cyscom-recruitments">cyscom-recruitments</a>
+              </span>
+              <div className="desc">recruitment portal for the cyscom vit chapter - next.js, firebase</div>
+            </div>
+            <div className="item">
+              <span className="name">
                 <a href="https://github.com/hemangahuja/coordinate-training">chess-coordinate-trainer</a>
               </span>
               <div className="desc">pygame drill for square notation, because board vision is a skill</div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://github.com/hemangahuja/pyjamas_forms">pyjamas</a>
+              </span>
+              <div className="desc">config-driven form generator with per-field aes encryption before storage</div>
             </div>
           </div>
         </section>
@@ -152,6 +167,18 @@ export default function Home() {
                 security writing on medium, including a published piece on the birthday attack and hash collisions
                 for OWASP VITCC
               </div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://blog.cyscomvit.com/2021/10/slow-loris-attack.html">slow-loris-attack</a>
+              </span>
+              <div className="desc">low-and-slow http attack that starves web servers - cyscom vit blog</div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://blog.cyscomvit.com/2021/05/a-beginners-guide-to-buffer-overflow.html">buffer-overflow</a>
+              </span>
+              <div className="desc">intro to buffer overflow attacks in c - cyscom vit blog</div>
             </div>
             <div className="item">
               <span className="name">
@@ -174,3 +201,5 @@ export default function Home() {
     </>
   )
 }
+
+

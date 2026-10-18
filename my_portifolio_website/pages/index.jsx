@@ -114,6 +114,10 @@ export default function Home() {
               <span className="name">renovator</span>
               <div className="desc">automates dependency maintenance with bullmq, redis background jobs and github webhooks</div>
             </div>
+            <div className="item">
+              <span className="name">autolocal</span>
+              <div className="desc">debug Go microservices locally instead of fighting the shared environment</div>
+            </div>
           </div>
         </section>
 
@@ -123,16 +127,17 @@ export default function Home() {
           </div>
           <div className="out">
             <div className="item">
-              <span className="name">autolocal</span>{' '}
-              <span className="tag"># weekend build, internal - not public</span>
-              <div className="desc">debug Go microservices locally instead of fighting the shared environment</div>
-            </div>
-            <div className="item">
               <span className="name">
                 <a href="https://www.hemang.xyz/just-chatting">just-chatting</a>
               </span>{' '}
               <span className="tag"># live</span>
               <div className="desc">channel-based messaging with audio and video calls - next.js, pusher, jitsi</div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://github.com/cyscomvit/cyscom-recruitments">cyscom-recruitments</a>
+              </span>
+              <div className="desc">recruitment portal for the cyscom vit chapter - next.js, firebase</div>
             </div>
             <div className="item">
               <span className="name">
@@ -196,4 +201,5 @@ export default function Home() {
     </>
   )
 }
+
 

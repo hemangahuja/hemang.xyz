@@ -155,6 +155,18 @@ export default function Home() {
             </div>
             <div className="item">
               <span className="name">
+                <a href="https://blog.cyscomvit.com/2021/10/slow-loris-attack.html">slow-loris-attack</a>
+              </span>
+              <div className="desc">low-and-slow http attack that starves web servers - cyscom vit blog</div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://blog.cyscomvit.com/2021/05/a-beginners-guide-to-buffer-overflow.html">buffer-overflow</a>
+              </span>
+              <div className="desc">intro to buffer overflow attacks in c - cyscom vit blog</div>
+            </div>
+            <div className="item">
+              <span className="name">
                 <a href="https://www.instagram.com/lil.peep.west.delhi/">poetry</a>
               </span>
               <div className="desc">poems, occasionally</div>

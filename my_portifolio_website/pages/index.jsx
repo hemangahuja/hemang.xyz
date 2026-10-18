@@ -94,7 +94,7 @@ export default function Home() {
 
         <section id="work">
           <div className="cmd">
-            <span className="prompt">$</span> ls cisco/ <span className="tag"># day job, the short version</span>
+            <span className="prompt">$</span> ls work/ <span className="tag"># day job, the short version</span>
           </div>
           <div className="out">
             <div className="item">
@@ -109,6 +109,10 @@ export default function Home() {
               <div className="desc">
                 OpenTelemetry tracing SDK used by <b>5+ AI agents</b> across teams
               </div>
+            </div>
+            <div className="item">
+              <span className="name">renovator</span>
+              <div className="desc">automates dependency maintenance with bullmq, redis background jobs and github webhooks</div>
             </div>
           </div>
         </section>
@@ -135,6 +139,12 @@ export default function Home() {
                 <a href="https://github.com/hemangahuja/coordinate-training">chess-coordinate-trainer</a>
               </span>
               <div className="desc">pygame drill for square notation, because board vision is a skill</div>
+            </div>
+            <div className="item">
+              <span className="name">
+                <a href="https://github.com/hemangahuja/pyjamas_forms">pyjamas</a>
+              </span>
+              <div className="desc">config-driven form generator with per-field aes encryption before storage</div>
             </div>
           </div>
         </section>
@@ -186,3 +196,4 @@ export default function Home() {
     </>
   )
 }
+

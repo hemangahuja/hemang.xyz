@@ -141,7 +141,7 @@ export default function Home() {
 
         <section id="writing">
           <div className="cmd">
-            <span className="prompt">$</span> cat writing/
+            <span className="prompt">$</span> ls writing/
           </div>
           <div className="out">
             <div className="item">

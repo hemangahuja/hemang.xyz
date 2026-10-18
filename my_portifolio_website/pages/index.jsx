@@ -58,7 +58,7 @@ export default function Home() {
             <a href="#work">work</a>
             <a href="#writing">writing</a>
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ whiteSpace: 'nowrap' }}>
-              resume â
+              resume &#8599;
             </a>
           </span>
         </nav>
@@ -204,6 +204,7 @@ export default function Home() {
     </>
   )
 }
+
 
 
 
